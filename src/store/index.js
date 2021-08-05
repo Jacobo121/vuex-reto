@@ -7,7 +7,7 @@ export default createStore({
   mutations: {
     setPerson(state, payload) {
       state.persons.push(payload)
-      console.log(state.persons)
+      console.log(state)
     }
   },
   actions: {
