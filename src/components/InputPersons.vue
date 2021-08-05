@@ -1,6 +1,5 @@
 <template lang="">
   <div class="container">
-    <form>
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">Fecha de reporte</label>
@@ -30,7 +29,7 @@
         <label class="form-check-label" for="inlineCheckbox2">Grave</label>
       </div>
       <div class="form-group">
-        <label for="inputAddress">Address</label>
+        <label for="inputAddress">Departamento</label>
         <input
           type="text"
           class="form-control"
@@ -39,7 +38,7 @@
         />
       </div>
       <div class="form-group">
-        <label for="inputAddress2">Address 2</label>
+        <label for="inputAddress2">Ciudad</label>
         <input
           type="text"
           class="form-control"
@@ -47,7 +46,7 @@
           placeholder="Apartment, studio, or floor"
         />
       </div>
-      <div class="form-row">
+      <!-- <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
           <input type="text" class="form-control" id="inputCity" />
@@ -71,9 +70,8 @@
             Check me out
           </label>
         </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </form>
+      </div> -->
+      <button type="submit" class="btn btn-primary">Procesar</button>
   </div>
 </template>
 
