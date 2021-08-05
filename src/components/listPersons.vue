@@ -12,7 +12,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in persons.persons" :key="item.id_de_caso">
+        <tr v-for="item in taget.persons.persons" :key="item.id_de_caso">
           <th scope="row">{{ item.id_de_caso }}</th>
           <td>{{ item.fecha_reporte_web }}</td>
           <td> 

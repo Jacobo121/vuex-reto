@@ -39,11 +39,6 @@ export default {
 
   methods: {
     ...mapActions(['setResponse']),
-
-    sendPersons() {
-      console.log(this.persons)
-      this.setResponse(this.persons)
-    }
   }
 }
 </script>
