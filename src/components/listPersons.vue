@@ -8,11 +8,11 @@
           <th scope="col">Fecha de notificacion</th>
           <th scope="col">Estado</th>
           <th scope="col">Departamento</th>
-          <th scope="col">Acciones</th>
+          <th scope="col">Accion</th>
         </tr>
       </thead>
       <tbody>
-        <tr v-for="item in persons" :key="item.id_de_caso">
+        <tr v-for="item in persons[1]" :key="item.id_de_caso">
           <th scope="row">{{ item.id_de_caso }}</th>
           <td>{{ item.fecha_reporte_web }}</td>
           <td> 
@@ -20,7 +20,12 @@
           </td>
           <td>{{ item.departamento_nom }}</td>
           <td>{{ item.ciudad_municipio_nom }}</td>
-          
+          <td>
+            <button class="btn btn-danger">
+              Eliminar
+            </button>
+          </td>
+        
         </tr>
       </tbody>
     </table>
@@ -32,7 +37,7 @@ import { mapState } from "vuex";
 export default {
 
   mounted() {
-    console.log(this.persons)
+    console.log(this.persons[1])
   },
 
   computed: {

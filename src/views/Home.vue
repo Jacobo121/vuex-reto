@@ -1,17 +1,22 @@
 <template>
-  <form @submit.prevent="SendPersons">
-    <InputPersons :persons="persons" />
-  </form>
-
-  <ListPersons />
+  <div class="container">
+    <form @submit.prevent="SendPersons">
+      <InputPersons :persons="persons" />
+    </form>
+    
+    <div class="mt-4">
+      <ListPersons />
+    </div>
+  </div>
 </template>
 
 <script>
-// @ is an alias to /src
+
 import InputPersons from '@/components/InputPersons.vue'
 import ListPersons from '@/components/ListPersons.vue'
-import {mapActions} from 'vuex';
 import axios from 'axios'
+import {mapActions} from 'vuex';
+
 
 export default {
   name: 'Home',
@@ -30,8 +35,11 @@ export default {
     axios
       .get('https://www.datos.gov.co/resource/gt2j-8ykr.json')
       .then(response => (
-        this.persons = response.data,
-        this.setResponse(this.persons)
+        //guardo la respuesta en this.persons
+        //this.persons = response.data,
+        
+        //mando la respuesta a la a la store
+        this.setResponse(response.data)
       ))
       .catch(error => console.log(error))
 

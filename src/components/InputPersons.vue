@@ -46,7 +46,7 @@
           placeholder="Apartment, studio, or floor"
         />
       </div>
-      <!-- <div class="form-row">
+      <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputCity">City</label>
           <input type="text" class="form-control" id="inputCity" />
@@ -70,7 +70,7 @@
             Check me out
           </label>
         </div>
-      </div> -->
+      </div>
       <button type="submit" class="btn btn-primary">Procesar</button>
   </div>
 </template>
